@@ -17,6 +17,7 @@ export default function App() {
 
         {/* Protected routes */}
         <Route element={<ProtectedRoute />}>
+          <Route path="/" element={<ProductList />} />
           <Route path="/products" element={<ProductList />} />
           <Route path="/products/:productId" element={<ProductDetail />} />
           <Route path="/cart" element={<Cart />} />
