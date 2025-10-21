@@ -11,7 +11,7 @@ export default function ProductDetail() {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`https://api.escuelajs.co/api/v1/products/${productId}`)
+    fetch(`https://fakestoreapi.com/products/${productId}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);
