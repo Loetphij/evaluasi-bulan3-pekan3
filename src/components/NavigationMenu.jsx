@@ -20,9 +20,9 @@ export default function Navigation() {
                 </NavLink>
             </li>
             <li>
-            <NavLink to="/dashboard" className={({ isActive }) => (isActive ? "active" : "")}>
-                Dashboard
-            </NavLink>
+                <NavLink to="/cart" className={({ isActive }) => (isActive ? "active" : "")}>
+                    Cart
+                </NavLink>
             </li>
 
             {isAuthenticated ? (

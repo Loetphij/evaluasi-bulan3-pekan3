@@ -8,6 +8,7 @@ function NotFound() {
             <header className="header">
                 <div className="logo">
                 <h2>Tech Solutions</h2>
+                <Navigation />
                 </div>
             </header>
             <h2>404 - Halaman Tidak Ditemukan</h2>;

@@ -12,9 +12,9 @@ export default function Login() {
         if (username && password) {
             localStorage.setItem('authToken', 'myToken')
             alert('Login berhasil!')
-            navigate('/', { state:{ fromLogin: true} })
+            navigate('/products', { state:{ fromLogin: true} })
         } else {
-            alert('Username dan password tidak boleh kosong!')
+            alert('Username atau password salah!')
         }
     }
 
@@ -42,7 +42,7 @@ export default function Login() {
                 />
                 <button type="Submit">Masuk</button>
                 <div style={{ marginTop: '4px', textAlign: 'center'}}>
-                    <p>Enter a random username and password</p>            
+                    <p>Masukan username dan password random</p>             
                 </div>
             </form>
         </>
