@@ -50,6 +50,7 @@ export default function ProductDetail() {
           <div className="detail-info">
             <h1>{product.title}</h1>
             <p className="detail-description">{product.description}</p>
+            <p style={{ color: '#333'}}>Rating: {product.rating.rate} ({product.rating.count} views)</p>
             <p className="detail-price">Price: ${product.price}</p>
 
             <div style={{ display: "flex", gap: "10px" }}>
