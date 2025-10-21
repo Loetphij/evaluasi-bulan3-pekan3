@@ -26,7 +26,7 @@ export default function Cart() {
               {cart.map((item) => (
                 <li key={item.id} style={{ marginBottom: "15px" }}>
                   <img
-                    src={item.images[0]}
+                    src={item.image}
                     alt={item.title}
                     width="60"
                     height="60"
