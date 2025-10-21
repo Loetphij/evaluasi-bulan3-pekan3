@@ -37,9 +37,10 @@ export default function ProductList() {
                     key={product.id}
                     className="product-card"
                     >
-                    <img src={product.images[0]} alt={product.title} />
+                    <img src={product.image} alt={product.title} />
                     <h3>{product.title}</h3>
                     <p>${product.price}</p>
+                    <p style={{ color: '#333'}}>Rating: {product.rating.rate} ({product.rating.count} views)</p>
                 </Link>
             ))}
             </div>

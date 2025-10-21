@@ -43,7 +43,7 @@ export default function ProductDetail() {
       <div className="product-detail">
         <div className="detail-card">
           <img
-            src={product.images[0]}
+            src={product.image}
             alt={product.title}
             className="detail-image"
           />
